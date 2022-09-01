@@ -1,0 +1,156 @@
+{
+	"info": {
+		"_postman_id": "b4d5207e-304a-46ed-8e4f-cea44ac4528a",
+		"name": "milkDelivery",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22923521"
+	},
+	"item": [
+		{
+			"name": "milk CRUD",
+			"item": [
+				{
+					"name": "getAllOrder",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:6000/api/v1/order",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "place order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"suhani  mallick\",\r\n    \"email\":\"suhani1@example.com\",\r\n    \"phone\":\"9692678654\",\r\n    \r\n    \"address\":\"xyz street , odisha\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:6000/api/v1/order",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit order",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n{\r\n\"name\":\"sujata\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:6000/api/v1/order/6300b2f33b0769278cab7046",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"order",
+								"6300b2f33b0769278cab7046"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteOrder",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:6000/api/v1/order/6300d6b6ac674ac0c020ae6f",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"order",
+								"6300d6b6ac674ac0c020ae6f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get order of perticular date",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:6000/api/v1/order?createdAt=1980-06-11",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "6000",
+							"path": [
+								"api",
+								"v1",
+								"order"
+							],
+							"query": [
+								{
+									"key": "createdAt",
+									"value": "1980-06-11"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

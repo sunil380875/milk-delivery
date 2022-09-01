@@ -1,0 +1,20 @@
+{
+  "name": "milk",
+  "version": "1.0.0",
+  "description": "order milk",
+  "main": "app.js",
+  "scripts": {
+    "start:prod": "nodemon server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "sunil kumar mishra",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.19",
+    "validator": "^13.7.0"
+  }
+}
